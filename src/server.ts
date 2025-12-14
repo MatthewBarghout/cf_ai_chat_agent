@@ -34,7 +34,8 @@ export class Chat extends AIChatAgent<Env> {
 
     // Create Workers AI instance with the AI binding
     const workersai = createWorkersAI({ binding: this.env.AI });
-    const model = workersai("@cf/meta/llama-3.3-70b-instruct-fp8-fast");
+    // biome-ignore lint/suspicious/noExplicitAny: Llama 3.3 is valid but not yet in type definitions
+    const model = workersai("@cf/meta/llama-3.3-70b-instruct-fp8-fast" as any);
 
     // Collect all tools, including MCP tools
     const allTools = {

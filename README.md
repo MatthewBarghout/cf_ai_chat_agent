@@ -50,17 +50,20 @@ This application demonstrates a complete AI-powered chat system built entirely o
 ## Running Locally
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/MatthewBarghout/cf_ai_chat_agent.git
    cd cf_ai_chat_agent
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**
+
    ```bash
    npm start
    ```
@@ -74,11 +77,13 @@ That's it! No API keys needed - Workers AI is free on Cloudflare.
 ## Deploying to Cloudflare
 
 1. **Login to Cloudflare**
+
    ```bash
    npx wrangler login
    ```
 
 2. **Deploy**
+
    ```bash
    npm run deploy
    ```
@@ -103,14 +108,18 @@ That's it! No API keys needed - Workers AI is free on Cloudflare.
 ## Key Components
 
 ### 1. LLM Integration (src/server.ts)
+
 Uses Workers AI with Llama 3.3 for natural language processing:
+
 ```typescript
 const workersai = createWorkersAI({ binding: this.env.AI });
 const model = workersai("@cf/meta/llama-3.3-70b-instruct-fp8-fast");
 ```
 
 ### 2. State Management (wrangler.jsonc)
+
 Durable Objects with SQLite for persistent chat history:
+
 ```jsonc
 "durable_objects": {
   "bindings": [{
@@ -121,6 +130,7 @@ Durable Objects with SQLite for persistent chat history:
 ```
 
 ### 3. Chat Interface (src/app.tsx)
+
 React-based UI with real-time streaming and tool confirmations
 
 ## Technical Highlights
@@ -134,16 +144,19 @@ React-based UI with real-time streaming and tool confirmations
 ## Development
 
 Run tests:
+
 ```bash
 npm test
 ```
 
 Type checking:
+
 ```bash
 npm run types
 ```
 
 Format code:
+
 ```bash
 npm run format
 ```

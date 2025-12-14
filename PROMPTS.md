@@ -5,6 +5,7 @@ This document contains the AI prompts used during the development of this Cloudf
 ## Initial Setup
 
 **Prompt 1: Project Initialization**
+
 ```
 I need to build an AI-powered chat application for Cloudflare that meets these requirements:
 - Uses Llama 3.3 on Workers AI (not external APIs)
@@ -18,6 +19,7 @@ Can you help me set up the project structure and choose the right Cloudflare ser
 ## LLM Integration
 
 **Prompt 2: Switching to Workers AI**
+
 ```
 The starter template uses OpenAI, but I need to switch to Cloudflare's Workers AI with Llama 3.3
 to avoid API costs and meet the assignment requirements.
@@ -31,6 +33,7 @@ Can you update the code to:
 ## Architecture & Design
 
 **Prompt 3: Understanding the Architecture**
+
 ```
 Explain how this chat agent uses:
 - Workers AI for LLM inference
@@ -43,6 +46,7 @@ I want to make sure I understand all the components before deploying.
 ## Documentation
 
 **Prompt 4: README Improvements**
+
 ```
 Update the README.md to clearly explain:
 - What the project does
@@ -56,12 +60,14 @@ Make it clear and professional for a technical assignment submission.
 ## Testing & Deployment
 
 **Prompt 5: Local Testing**
+
 ```
 How do I test the application locally to make sure the Workers AI integration
 is working correctly before deploying to Cloudflare?
 ```
 
 **Prompt 6: Deployment Process**
+
 ```
 Walk me through deploying this to Cloudflare Workers. What commands do I need
 to run and what should I expect?
@@ -84,6 +90,7 @@ Throughout this project, I learned:
 ## Development Approach
 
 I used AI assistance to:
+
 - Understand Cloudflare's AI platform architecture
 - Convert the OpenAI-based starter to Workers AI
 - Write clear documentation
